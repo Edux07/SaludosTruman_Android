@@ -23,30 +23,31 @@
             android:id="@+id/radioButton1"
             android:layout_width="83dp"
             android:layout_height="63dp"
-            android:onClick="radioButtonn1"
+            android:onClick="presionSR"
             android:text="SR" />
 
         <RadioButton
             android:id="@+id/radioButton2"
             android:layout_width="82dp"
             android:layout_height="63dp"
-            android:onClick="radioButton2"
+            android:onClick="presionSRTA"
             android:text="SRTA" />
 
         <RadioButton
             android:id="@+id/radioButton3"
-            android:layout_width="82dp"
-            android:layout_height="63dp"
-            android:onClick="radioButton3"
+            android:layout_width="173dp"
+            android:layout_height="70dp"
+            android:onClick="presionNA"
             android:text="N/A" />
+
     </RadioGroup>
 
     <CheckBox
         android:id="@+id/checkBox5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="presionTARDE"
         android:text="TARDE"
-        android:onClick="Check2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.462"
@@ -58,8 +59,8 @@
         android:id="@+id/checkBox6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="presionNOCHE"
         android:text="NOCHE"
-        android:onClick="Check1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.773"
@@ -68,7 +69,7 @@
         app:layout_constraintVertical_bias="0.259" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tv1"
         android:layout_width="191dp"
         android:layout_height="41dp"
         android:text="Apellido"
@@ -83,8 +84,8 @@
         android:id="@+id/checkBox4"
         android:layout_width="110dp"
         android:layout_height="53dp"
+        android:onClick="presionDIA"
         android:text="DIA"
-        android:onClick="Check"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.131"
