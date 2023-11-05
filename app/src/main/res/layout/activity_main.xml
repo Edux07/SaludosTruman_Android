@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#CC6464"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="-10dp"
+    tools:layout_editor_absoluteY="263dp">
 
     <RadioGroup
         android:id="@+id/RadioGroup"
@@ -14,30 +16,30 @@
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eTT1"
         app:layout_constraintVertical_bias="0.105">
 
         <RadioButton
             android:id="@+id/radioButton1"
             android:layout_width="83dp"
             android:layout_height="63dp"
-            android:onClick="presionSR"
+            android:onClick="presion"
             android:text="SR" />
 
         <RadioButton
             android:id="@+id/radioButton2"
             android:layout_width="82dp"
             android:layout_height="63dp"
-            android:onClick="presionSRTA"
+            android:onClick="presion"
             android:text="SRTA" />
 
         <RadioButton
             android:id="@+id/radioButton3"
             android:layout_width="173dp"
             android:layout_height="70dp"
-            android:onClick="presionNA"
+            android:onClick="presion"
             android:text="N/A" />
 
     </RadioGroup>
@@ -46,51 +48,80 @@
         android:id="@+id/checkBox5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="presionTARDE"
+        android:onClick="presion1"
         android:text="TARDE"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.259" />
+        app:layout_constraintVertical_bias="0.131" />
 
     <CheckBox
         android:id="@+id/checkBox6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="presionNOCHE"
+        android:onClick="presion1"
         android:text="NOCHE"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.773"
+        app:layout_constraintHorizontal_bias="0.779"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.259" />
+        app:layout_constraintVertical_bias="0.131" />
 
     <TextView
         android:id="@+id/tv1"
-        android:layout_width="191dp"
-        android:layout_height="41dp"
-        android:text="Apellido"
-        android:visibility="invisible"
+        android:layout_width="202dp"
+        android:layout_height="93dp"
+        android:textSize="20sp"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.389" />
+        app:layout_constraintVertical_bias="0.617" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.662" />
 
     <CheckBox
         android:id="@+id/checkBox4"
         android:layout_width="110dp"
         android:layout_height="53dp"
-        android:onClick="presionDIA"
+        android:onClick="presion1"
         android:text="DIA"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintHorizontal_bias="0.166"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.257" />
+        app:layout_constraintVertical_bias="0.132" />
+
+    <EditText
+        android:id="@+id/eTT1"
+        android:layout_width="233dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="176dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/tv1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.017" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
