@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#CC6464"
+    android:background="#7E7A7A"
     tools:context=".MainActivity"
     tools:layout_editor_absoluteX="-10dp"
     tools:layout_editor_absoluteY="263dp">
@@ -111,8 +111,8 @@
 
     <EditText
         android:id="@+id/eTT1"
-        android:layout_width="233dp"
-        android:layout_height="50dp"
+        android:layout_width="285dp"
+        android:layout_height="68dp"
         android:layout_marginTop="176dp"
         android:ems="10"
         android:inputType="text"

@@ -48,12 +48,12 @@ public class MainActivity extends AppCompatActivity {
             } else if (radioButtonn2.isChecked()) {
                 apellido = "SRTA " + apellido;
             } else if (radioButtonn3.isChecked()) {
-                apellido = "N/A " + apellido;
+                apellido = "" + apellido;
 
             } tv2.setText(apellido);
             }
         public void presion1(View view){
-            Toast.makeText(this, "Introduzca su apellido", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "No seleccione mas de una casilla", Toast.LENGTH_SHORT).show();
         String Resultado1=" ";
         if(check.isChecked()){
             Resultado1= "Buenos dias";
